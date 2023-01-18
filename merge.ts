@@ -1,4 +1,4 @@
-function merge(collection_1: number[],collection_2: number[]): number[]{
+export function merge(collection_1: number[],collection_2: number[]): number[]{
     let result = new Array<number>();
     let j = 0;
     let i = 0;
@@ -22,7 +22,3 @@ function merge(collection_1: number[],collection_2: number[]): number[]{
     }
     return result;
 }
-
-let arr1 = [1,2,3,4,5,6];
-let arr2 = [2,3,4,5,6,7];
-console.log(merge(arr1,arr2));

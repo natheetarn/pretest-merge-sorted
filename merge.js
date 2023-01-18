@@ -1,8 +1,10 @@
 "use strict";
+exports.__esModule = true;
+exports.merge = void 0;
 function merge(collection_1, collection_2) {
-    let result = new Array();
-    let j = 0;
-    let i = 0;
+    var result = new Array();
+    var j = 0;
+    var i = 0;
     while (i < collection_1.length && j < collection_2.length) {
         if (collection_1[i] < collection_2[j]) {
             result.push(collection_1[i]);
@@ -23,6 +25,4 @@ function merge(collection_1, collection_2) {
     }
     return result;
 }
-let arr1 = [1, 2];
-let arr2 = [2, 3, 4, 5, 6, 7];
-console.log(merge(arr1, arr2));
+exports.merge = merge;
