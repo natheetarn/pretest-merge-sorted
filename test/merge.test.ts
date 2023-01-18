@@ -1,4 +1,4 @@
-import {merge} from './merge';
+import {merge} from '../source/merge';
 
 describe('Test merge sorted arrays function', () => {
     it('should return an array of size arr1.length + arr2.length', () => {
